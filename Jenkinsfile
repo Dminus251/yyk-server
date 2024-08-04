@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'dminus251/jenkins-docker-agent:using_socket'
+            image 'dminus251/jenkins-docker-agent:using_socket' #docker in docker 사용을 위해 docker가 있는 이미지 사용
             args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'
             label 'docker-node-agent'
         }

@@ -12,7 +12,7 @@ COPY app.py ./
 COPY terraform_outputs.json ./
 
 #curl http://localhost:5000/health
-COPY healthCheck ./
+COPY healthCheck.sh ./
 
 
 RUN pip install --no-cache-dir -r requirements.txt
