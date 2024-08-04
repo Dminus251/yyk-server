@@ -47,9 +47,11 @@ pipeline {
 	}
 	stage ('Health Check') {
 		steps {
-			sh './healthCheck'
-			if ($response != '{"status":"ok"}'){
-				error("Health Check Failed")
+			script {
+				sh './healthCheck'
+				if ($response != '{"status":"ok"}'){
+					error("Health Check Failed")
+				}
 			}
 		}
 	}
