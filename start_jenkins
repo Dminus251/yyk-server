@@ -1,0 +1,4 @@
+docker start 1f15d64ae876
+sleep 20
+docker ps
+docker exec -it jenkins /bin/bash

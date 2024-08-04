@@ -1,0 +1,42 @@
+{
+  "db_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "terraform-20240803013837371600000001.czgm6o2wuxz9.ap-northeast-2.rds.amazonaws.com:3306"
+  },
+  "db_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "yykdb"
+  },
+  "db_password": {
+    "sensitive": true,
+    "type": "string",
+    "value": "yyk12345678"
+  },
+  "db_user": {
+    "sensitive": false,
+    "type": "string",
+    "value": "yyk"
+  },
+  "security_group_id_in_sg": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-012c2a36e0c9dfaff"
+  },
+  "security_group_ids_in_rds": {
+    "sensitive": false,
+    "type": [
+      "set",
+      "string"
+    ],
+    "value": [
+      "sg-012c2a36e0c9dfaff"
+    ]
+  },
+  "subnetgroup_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "main"
+  }
+}
